@@ -25,11 +25,7 @@
             android:launchMode="singleTop"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="screenSize|orientation">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ui.BusinessDetailActivity"
@@ -39,6 +35,22 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.alapplication.yelpy.ui.BusinessListActivity" />
+        </activity>
+
+        <activity android:name=".demo.DemoActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".demo.DemoListViewActivity"
+            android:launchMode="singleTop"
+            android:configChanges="screenSize|orientation">
+
         </activity>
     </application>
 
